@@ -8,17 +8,20 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int Id = 0;
-    public const int WorldPosition = 1;
+    public const int CurrentAnimationTime = 0;
+    public const int Id = 1;
+    public const int WorldPosition = 2;
 
-    public const int TotalComponents = 2;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
+        "CurrentAnimationTime",
         "Id",
         "WorldPosition"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(Code.Common.CurrentAnimationTime),
         typeof(Code.Common.Id),
         typeof(Code.Common.WorldPosition)
     };
